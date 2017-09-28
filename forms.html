@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register With Us</title>
+</head>
+<body>
+
+<header>
+    <h1>Register With Us!</h1>
+</header>
+
+<form method="POST" action="https://requestb.in/1lnvmel1">
+
+    <label for="username">Username</label>
+    <input id="username" name="username" type="text" placeholder="Enter Username Here">
+    <br>
+    <label for="password">Password</label>
+    <input id="password" name="password" type="password" placeholder="Enter Password Here">
+    <br>
+    <label for="Bio">Bio</label>
+    <textarea name="Bio" id="Bio" cols="30" rows="10" placeholder="Enter Your Bio Here"></textarea>
+    <br>
+    <p>
+        <label for="Advertisement">How did you hear about us?</label>
+        <input id="Advertisement" type="radio" name="Billboard" value="Billboard" multiple>Billboard
+        <input id="Advertisement" type="radio" name="Radio" value="Radio Advertisement" multiple>Radio Advertisement
+        <input id="Advertisement" type="radio" name="Internet" value="Internet Advertisement" multiple>Internet Advertisement
+        <input id="Advertisement" type="radio" name="Other" value="Other" multiple>Other
+    </p>
+    <h5>What web browser are you using?</h5>
+    <select name="Web Browser">
+        <option value="Chrome">Chrome</option>
+        <option value="Mozilla">Mozilla</option>
+        <option value="Safari">Safari</option>
+    </select>
+
+    <button type="submit">Submit the form</button>
+
+</form>
+
+</body>
+</html>
