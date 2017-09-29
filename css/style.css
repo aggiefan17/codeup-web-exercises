@@ -1,0 +1,50 @@
+.fancy-header {
+    color: purple; /* single line comment */
+    text-decoration: underline;
+}
+
+header>h1 {
+    text-align: center;
+}
+
+h2 {
+    color: blanchedalmond;
+    text-decoration: underline;
+}
+
+body {
+    background-color: peachpuff;
+    background-image: url("../img/cliffs.jpg");
+    font-family: Yuppy SC;
+    color: white;
+}
+
+ul {
+    list-style: upper-roman;
+}
+
+table td {
+    padding: 20px;
+    font-size: 18px;
+}
+
+table tr {
+    padding: 20px;
+    font-size: 18px;
+}
+
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: blue;
+}
+
+a:active {
+    color: green;
+}
