@@ -9,35 +9,62 @@
 <header>
     <h1>Register With Us!</h1>
 </header>
+    <main>
+    <form method="POST" action="https://requestb.in/1lnvmel1">
 
-<form method="POST" action="https://requestb.in/1lnvmel1">
+        <div>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="Enter Email Here">
+        </div>
 
-    <label for="username">Username</label>
-    <input id="username" name="username" type="text" placeholder="Enter Username Here">
-    <br>
-    <label for="password">Password</label>
-    <input id="password" name="password" type="password" placeholder="Enter Password Here">
-    <br>
-    <label for="Bio">Bio</label>
-    <textarea name="Bio" id="Bio" cols="30" rows="10" placeholder="Enter Your Bio Here"></textarea>
-    <br>
-    <p>
-        <label for="Advertisement">How did you hear about us?</label>
-        <input id="Advertisement" type="radio" name="Billboard" value="Billboard">Billboard
-        <input id="Advertisement" type="radio" name="Radio" value="Radio Advertisement">Radio Advertisement
-        <input id="Advertisement" type="radio" name="Internet" value="Internet Advertisement">Internet Advertisement
-        <input id="Advertisement" type="radio" name="Other" value="Other">Other
-    </p>
-    <h5>What web browser are you using?</h5>
-    <select name="Web Browser">
-        <option value="Chrome">Chrome</option>
-        <option value="Mozilla">Mozilla</option>
-        <option value="Safari">Safari</option>
-    </select>
+        <br>
 
-    <button type="submit">Submit the form</button>
+        <div>
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" placeholder="Enter Password Here">
+        </div>
 
-</form>
+        <br>
+        <div>
+        <label for="Bio">Bio</label><br>
+        <textarea name="Bio" id="Bio" cols="30" rows="10" placeholder="Enter Your Bio Here"></textarea>
+        </div>
+        <br>
 
+        <fieldset>
+        <div>
+            <legend>How did you hear about us?</legend>
+            <br>
+            <label for="Billboard">
+                <input id="Billboard" type="radio" name="Billboard" value="Billboard">Billboard <br>
+            </label>
+            <label for="Radio Advertisement">
+                <input id="Radio Advertisement" type="radio" name="Radio Advertisement" value="Radio Advertisement">Radio Advertisement
+                <br>
+            </label>
+            <label for="Internet Advertisement">
+                <input id="Internet Advertisement" type="radio" name="Internet" value="Internet Advertisement">Internet Advertisement
+                <br>
+            </label>
+            <label for="Other">
+                <input id="Other" type="radio" name="Other" value="Other">Other
+            </label>
+        </div>
+        </fieldset>
+
+        <h5>What web browser are you using?</h5>
+
+        <select name="Web Browser">
+            <option value="Chrome">Chrome</option>
+            <option value="Mozilla">Mozilla</option>
+            <option value="Safari">Safari</option>
+        </select>
+
+        <br><br>
+
+        <button type="submit">Submit the form</button>
+
+    </form>
+    </main>
 </body>
 </html>
