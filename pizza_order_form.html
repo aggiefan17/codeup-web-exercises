@@ -3,8 +3,143 @@
 <head>
     <meta charset="utf-8">
     <title>Terry's Pizza Delivery</title>
+    <link rel="stylesheet" href="css/pizza_order_form.css">
 </head>
 <body>
+<h1>Order Your Pizza</h1>
 
+<form method="POST" action="https://requestb.in/1ipea8d1">
+
+    <img id="pizza_pic" src="img/supreme_pizza.jpg" alt="Pizza">
+    <label for="address_type">Address Type</label>
+    <select name="address_type" id="address_type">
+        <option value="Residence">Residence</option>
+        <option value="Business">Business</option>
+        <option value="University">University</option>
+        <option value="Military">Military</option>
+    </select>
+
+    <br><br>
+
+    <label for="full_name">Full Name</label>
+    <input id="full_name" type="text" name="full_name" placeholder="Example: John Smith"><br><br>
+
+    <label for="street_address">Street Address</label>
+    <input id="street_address" type="text" name="street_address" placeholder="Example: 123 Main St."><br><br>
+
+    <label for="apt_number">Apt Nunber</label>
+    <input id="apt_number" type="text" name="apt_number"><br><br>
+
+    <label for="zip_code">Zip Code</label>
+    <input id="zip_code" type="number" name="zip_code" placeholder="Enter zip code"><br><br>
+
+    <label for="phone_number">Phone Numnber</label>
+    <input id="phone_number" type="text" name="phone_number" placeholder="Example: 123-456-7890"><br><br>
+
+<h2>Build Your Delicious Pizza Here!</h2>
+
+    <fieldset id="crust"><h3>Crust Style</h3>
+    <label>
+        <input type="radio" name="crust" value="Original">Original
+    </label>
+
+    <label>
+        <input type="radio" name="crust" value="Thin">Thin
+    </label>
+
+    <label>
+        <input type="radio" name="crust" value="Deep Dish">Deep Dish
+    </label></fieldset>
+
+    <br>
+
+    <fieldset id="size"><h3>Size</h3>
+    <label>
+        <input type="radio" name="size" value="Small">Small
+    </label>
+
+    <label>
+        <input type="radio" name="size" value="Large">Medium
+    </label>
+
+    <label>
+        <input type="radio" name="size" value="Large">Large
+    </label></fieldset>
+
+    <br>
+
+    <fieldset id="sauce"><h3>Sauce</h3>
+    <label>
+        <input type="radio" name="sauce" value="Original">Original
+    </label>
+
+    <label>
+        <input type="radio" name="sauce" value="BBQ">BBQ
+    </label>
+
+    <label>
+        <input type="radio" name="sauce" value="Pesto">Pesto
+    </label></fieldset>
+
+    <br>
+
+    <fieldset id="sauce_amount"><h3>How Much Sauce?</h3>
+    <label>
+        <input type="radio" name="sauce_amount" value="Normal">Normal
+    </label>
+
+    <label>
+        <input type="radio" name="sauce_amount" value="Light">Light
+    </label>
+
+    <label>
+        <input type="radio" name="sauce_amount" value="Extra">Extra
+    </label></fieldset>
+
+    <br>
+
+    <div><fieldset id="cheese_type">
+        <h3>Choose Your Cheese</h3>
+        <h5>(check all that apply)</h5>
+        <label><input type="checkbox" id="cheese1" name="cheese[]" value="mozzarella">Mozzarella</label>
+        <label><input type="checkbox" id="cheese2" name="cheese[]" value="parmesan">Parmesan</label><br>
+        <label><input type="checkbox" id="cheese3" name="cheese[]" value="provolone">Provolone</label>
+        <label><input type="checkbox" id="cheese4" name="cheese[]" value="cheddar">Cheddar</label><br>
+
+        <h3>Extra Cheese?</h3>
+        <label for="extra_cheese">Pile it on!</label>
+        <input type="checkbox" id="extra_cheese" name="extra_cheese" value="yes" checked>
+    </fieldset></div>
+
+    <br>
+
+    <div><fieldset id="meat_type">
+        <h3>Choose Your Meats</h3>
+        <h5>(check all that apply)</h5>
+        <label><input type="checkbox" id="meat1" name="meat[]" value="pepperoni">Pepperoni</label>
+        <label><input type="checkbox" id="meat2" name="meat[]" value="beef">Beef</label>
+        <label><input type="checkbox" id="meat3" name="meat[]" value="italian_sausage">Italian Sausage</label><br>
+        <label><input type="checkbox" id="meat4" name="meat[]" value="bacon">Bacon</label>
+        <label><input type="checkbox" id="meat5" name="meat[]" value="grilled_chicken">Grilled Chicken</label>
+        <label><input type="checkbox" id="meat6" name="meat[]" value="anchovies">Anchovies</label><br>
+    </fieldset></div>
+
+    <br>
+
+    <div><fieldset id="vegetable_type">
+        <h3>Choose Your Veggies</h3>
+        <h5>(check all that apply)</h5>
+        <label><input type="checkbox" id="vegetable1" name="vegetable[]" value="mushrooms">Mushrooms</label>
+        <label><input type="checkbox" id="vegetable2" name="vegetable[]" value="green_peppers">Green Peppers</label>
+        <label><input type="checkbox" id="vegetable" name="vegetable[]" value="onions">Onions</label><br>
+        <label><input type="checkbox" id="vegetable3" name="vegetable[]" value="black_olives">Black Olives</label>
+        <label><input type="checkbox" id="vegetable5" name="vegetable[]" value="jalepenos">Jalepenos</label>
+        <label><input type="checkbox" id="vegetable6" name="vegetable[]" value="pineapple">Pineapple</label><br>
+    </fieldset></div>
+
+    <br>
+
+    <button id="submit_button">Submit Order</button>
+</form>
 </body>
 </html>

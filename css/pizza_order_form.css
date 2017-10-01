@@ -1,0 +1,64 @@
+h1 {
+    text-align: center;
+    font-size: 100px;
+}
+
+body {
+    background-color: gold;
+}
+
+#pizza_pic {
+    float: right;
+    margin-right: 300px;
+}
+
+#crust {
+    background-color: black;
+    color: white;
+    width: 300px;
+}
+
+#size {
+    background-color: black;
+    color: white;
+    width: 300px;
+}
+
+#sauce {
+    background-color: black;
+    color: white;
+    width: 300px;
+}
+
+#sauce_amount {
+    background-color: black;
+    color: white;
+    width: 300px;
+}
+
+#cheese_type {
+    background-color: black;
+    color: white;
+    width: 300px;
+}
+
+#meat_type {
+    background-color: black;
+    color: white;
+    width: 300px;
+}
+
+#vegetable_type {
+    background-color: black;
+    color: white;
+    width: 300px;
+}
+
+#submit_button {
+    width: 150px;
+    height: 75px;
+    background-color: red;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+}
