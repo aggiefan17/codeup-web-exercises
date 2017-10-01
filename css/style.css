@@ -8,15 +8,15 @@ header>h1 {
 }
 
 h2 {
-    color: blanchedalmond;
+    color: purple;
     text-decoration: underline;
 }
 
 body {
-    background-color: peachpuff;
-    background-image: url("../img/cliffs.jpg");
+    background-color: burlywood;
+    background-image: url("../img/brickwall.png");
     font-family: Yuppy SC;
-    color: white;
+    color: darkmagenta;
 }
 
 ul {
