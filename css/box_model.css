@@ -1,0 +1,38 @@
+.box {
+    border: 1px solid black;
+    width: 150px;
+    height: 50px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+}
+
+#red_box {
+    background-color: red;
+}
+
+#orange_box {
+    background-color: orange;
+    margin-left: 30px;
+}
+
+#yellow_box {
+    background-color: yellow;
+    margin-left: 60px;
+}
+
+#green_box {
+    background-color: green;
+    margin-left: 90px;
+}
+
+#blue_box {
+    background-color: blue;
+    margin-left: 120px;
+}
+
+#indigo_box {
+    background-color: indigo;
+    margin-left: 150px;
+}
