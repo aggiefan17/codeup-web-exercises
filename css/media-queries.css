@@ -1,0 +1,95 @@
+
+/* screen sizes 500px and up */
+@media screen and (max-width:768px) {
+
+    body {
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        font-family: sans-serif;
+    }
+
+    .alert-info {
+        background-color: #d6fefe;
+        height: 40px;
+        width: 100%;
+        position: relative;
+    }
+
+    a {
+        text-align: center;
+        color: black;
+    }
+
+    h1 {
+        text-align: center;
+        width: 100%
+    }
+
+    .nav-links {
+        position: relative;
+        color: blue;
+        margin-left: -20px;
+    }
+
+    li {
+        list-style: none;
+        text-align: center;
+        background-color: lightgray;
+        margin-bottom:  10px;
+        height: 20px;
+        width: 95%;
+        float: left;
+    }
+
+    a:link {
+        color: #d6fefe;
+    }
+
+    img {
+        float: left;
+        position: relative;
+        width: 100%;
+    }
+
+    .main {
+        float: left;
+    }
+
+    .sub-section {
+        clear: both;
+    }
+
+    footer {
+        clear: both;
+    }
+}
+/* Small devices (tablets, 768px and up) */
+@media screen and (min-width:768px) { /* ... */ }
+
+    li {
+        list-style: none;
+        float: right;
+        margin-left: 20px;
+        margin-bottom: 40px;
+    }
+
+    img {
+        position: relative;
+        width: 100%;
+    }
+
+    .main {
+        float: left;
+        width: 60%;
+        margin-right: 20px;
+    }
+
+    .sub-section {
+        float: left;
+        width: 35%;
+    }
+    
+    footer {
+        clear: both;
+    }

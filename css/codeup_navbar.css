@@ -1,0 +1,46 @@
+header {
+    background-color: #88b053;
+    height: 2.8rem;
+    color: white;
+    margin: 0px;
+}
+
+p {
+    position: absolute;
+    left: 133px;
+    top: 0px;
+    font-size: 18px;
+}
+
+nav {
+    height: 2.8rem;
+    width: 100%;
+    background-color: #728f48;
+    color: white;
+    float: left;
+    margin: 0px;
+}
+
+body {
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+h3 {
+    margin-left: 120px;
+}
+
+li {
+    list-style: none;
+    font-size: 14px;
+    font-weight: normal;
+    float: left;
+    margin-right: 25px;
+}
+
+.logo {
+    height: 25px;
+    width: 50px;
+    float: left;
+    margin-left: 37px;
+    margin-top: 8px;
+}
