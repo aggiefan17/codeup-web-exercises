@@ -1,0 +1,48 @@
+.container {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.row {
+    background-color: #e1e1e1;
+    margin-bottom: 10px;
+    height: 50px;
+    width: 100%;
+}
+
+.one-half {
+    float: left;
+    width: 50%;
+    height: 50px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.one-third {
+    float: left;
+    width: calc(100%/3);
+    height: 50px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.one-fourth {
+    float: left;
+    width: calc(100%/4);
+    height: 50px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.one-eighth {
+    float: left;
+    width: calc(100%/8);
+    height: 50px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding: 10px;
+}
