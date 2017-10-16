@@ -72,17 +72,17 @@
 
 // function analyzeColor(input) {
 //     if (input === "blue") {
-//         console.log("blue is the color of the sky");
+//         return "blue is the color of the sky";
 //     } else if (input === "red") {
-//         console.log("Strawberries are red");
+//         return "Strawberries are red";
 //     } else if (input === "Orange") {
-//         console.log("Longhorns are orange");
+//         return "Longhorns are orange";
 //     } else if (input === "yellow") {
-//         console.log("The sun is yellow");
+//         return "The sun is yellow";
 //     } else if (input === "green") {
-//         console.log("Money is green");
+//         return "Money is green";
 //     } else {
-//         console.log("I don't know anything that color")
+//         return "I don't know anything that color";
 //     }
 // }
 //
@@ -103,17 +103,17 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
 
 // function analyzeColor(input) {
 //     if (input === "blue") {
-//         console.log("blue is the color of the sky");
+//         return "blue is the color of the sky";
 //     } else if (input === "red") {
-//         console.log("Strawberries are red");
+//         return "Strawberries are red";
 //     } else if (input === "Orange") {
-//         console.log("Longhorns are orange");
+//         return "Longhorns are orange";
 //     } else if (input === "yellow") {
-//         console.log("The sun is yellow");
+//         return "The sun is yellow";
 //     } else if (input === "green") {
-//         console.log("Money is green");
+//         return "Money is green";
 //     } else {
-//         console.log("I don't know anything that color")
+//         return "I don't know anything that color";
 //     }
 // }
 //
@@ -133,22 +133,22 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
 //
 // switch(input) {
 //     case "blue":
-//         alert("blue is the color of the sky");
+//         return "blue is the color of the sky";
 //         break;
 //     case "red":
-//         alert("Strawberries are red");
+//         return "Strawberries are red";
 //         break;
 //     case "orange":
-//         alert("Longhorns are orange");
+//         return "Longhorns are orange";
 //         break;
 //     case "yellow":
-//         alert("The sun is yellow");
+//         return "The sun is yellow";
 //         break;
 //     case "green":
-//         alert("Money is green");
+//         return "Money is green";
 //         break;
 //     default:
-//         alert("I don't know anything the color " + input)
+//         return "I don't know anything the color " + input;
 // }
 // }
 //
@@ -211,27 +211,27 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * return value.
  */
 
-// var number = Math.floor(Math.random() * 5);
-//
-// function calculateTotal(number, total) {
-//
-//     if (number === 0) {
-//         return total * 1;
-//     } else if (number === 1) {
-//         return total * .9;
-//     } else if (number === 2) {
-//         return total * .75;
-//     } else if (number === 3) {
-//         return total * .65;
-//     } else if (number === 4) {
-//         return total * .5;
-//     } else {
-//         return total * 0;
-//     }
-//
-// }
-//
-// console.log(calculateTotal(number, 100));
+var number = Math.floor(Math.random() * 5);
+
+function calculateTotal(number, total) {
+
+    if (number === 0) {
+        return total * 1;
+    } else if (number === 1) {
+        return total * .9;
+    } else if (number === 2) {
+        return total * .75;
+    } else if (number === 3) {
+        return total * .65;
+    } else if (number === 4) {
+        return total * .5;
+    } else {
+        return total * 0;
+    }
+
+}
+
+console.log(calculateTotal(number, 100));
 
 
 /**
