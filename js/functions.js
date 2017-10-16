@@ -11,11 +11,11 @@
  *  > sayHello("codeup") // returns "Hello, codeup!"
  */
 
-// function sayHello(name) {
-//     return "Hello, " + name + "!";
-// }
-//
-// console.log(sayHello("codeup"));
+function sayHello(name) {
+    return "Hello, " + name + "!";
+}
+
+console.log(sayHello("codeup"));
 
 
 /**
@@ -27,9 +27,9 @@
  */
 
 
-// var helloMessage = sayHello(name);
-//
-// console.log(sayHello("Terry"));
+var helloMessage = sayHello(name);
+
+console.log(sayHello("Terry"));
 
 /**
  * TODO:
@@ -248,21 +248,21 @@ function square(a) {
 
 console.log(square(9));
 
-
-function sumOfSquares(a, b) {
-    var  number = a;
-    var  anotherNumber = b;
-    return add(square(number), square(anotherNumber));
-}
-
-console.log(sumOfSquares(4, 3));
-
-
-function doMath(operator, a, b) {
-    return operator(a, b);
-    }
-
-console.log(doMath(add(2, 3));
+//
+// function sumOfSquares(a, b) {
+//     var  number = a;
+//     var  anotherNumber = b;
+//     return add(square(number), square(anotherNumber));
+// }
+//
+// console.log(sumOfSquares(4, 3));
+//
+//
+// function doMath(operator, a, b) {
+//     return operator(a, b);
+//     }
+//
+// console.log(doMath(add(2, 3));
 
 
 

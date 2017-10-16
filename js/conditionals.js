@@ -242,32 +242,102 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * price before the discount was, and what their price after the discount is.
  */
 // Generate a random number between 0 and 6
+//
+// var luckyNumber = Math.floor(Math.random() * 5);
+//
+// var billTotal = prompt("What is your total bill?");
+//
+// console.log(luckyNumber);
+//
+// function calculateTotal(luckyNumber, billTotal) {
+//
+//     if (luckyNumber === 0) {
+//         return (parseInt(billTotal)) * 1;
+//     } else if (luckyNumber === 1) {
+//         return (parseInt(billTotal)) * .9;
+//     } else if (luckyNumber === 2) {
+//         return (parseInt(billTotal)) * .75;
+//     } else if (luckyNumber === 3) {
+//         return (parseInt(billTotal)) * .65;
+//     } else if (luckyNumber === 4) {
+//         return (parseInt(billTotal)) * .5;
+//     } else {
+//         return total * 0;
+//     }
+//
+// }
+//
+//
+// alert("Your lucky number is " + luckyNumber);
+//
+// alert("Your total price before your discount is $" + parseInt(billTotal));
+//
+// alert("Your total bill after your discount is $" + calculateTotal(luckyNumber, parseInt(billTotal)));
 
-var luckyNumber = Math.floor(Math.random() * 5);
 
-var billTotal = prompt("What is your total bill?");
+// var dayOfWeek = prompt("What is your favorite day of the week?")
+//
+// function favoriteDay(input) {
+//     if (input === "Sunday") {
+//         return "Yay, Sunday Fun-day!";
+//     } else if (input === "Monday") {
+//         return "Monday Night Football!";
+//     } else if (input === "Tuesday") {
+//         return "Taco Tuesday!";
+//     } else if (input === "Wednesday") {
+//         return "Hump Day!";
+//     } else if (input === "Thursday") {
+//         return "Thirsty Thursday!";
+//     } else if (input === "Friday") {
+//         return "OMG, TGIF!";
+//     } else if (input === "Saturday") {
+//         return "Fire the grill up!";
+//     } else {
+//         return "Please input a valid day of the week.";
+//     }
+// }
 
-function calculateTotal(luckyNumber, billTotal) {
+var dayOfWeek = prompt("What is your favorite day of the week?")
 
-    if (luckyNumber === 0) {
-        return (parseInt(billTotal)) * 1;
-    } else if (luckyNumber === 1) {
-        return (parseInt(billTotal)) * .9;
-    } else if (luckyNumber === 2) {
-        return (parseInt(billTotal)) * .75;
-    } else if (luckyNumber === 3) {
-        return (parseInt(billTotal)) * .65;
-    } else if (luckyNumber === 4) {
-        return (parseInt(billTotal)) * .5;
-    } else {
-        return total * 0;
+function favoriteDay(input) {
+    switch(input) {
+        case "Sunday":
+            alert("Yay, Sunday Fun-day!");
+            break;
+        case "Monday":
+            alert("Monday Night Football!");
+            break;
+        case "Tuesday":
+            alert("Taco Tuesday!");
+            break;
+        case "Wednesnday":
+            alert("Hump Day!");
+            break;
+        case "Thursday":
+            alert("Thirsty Thursday!");
+            break;
+        case "Friday":
+            alert("OMG, TGIF!");
+            break;
+        case "Saturday":
+            alert("Fire the grill up!");
+            break;
+        default:
+            alert("Please input a valid day of the week.")
     }
-
 }
 
-console.log(luckyNumber);
-alert("Your lucky number is " + luckyNumber);
+alert(favoriteDay(dayOfWeek));
 
-alert("Your total price before your discount is $" + parseInt(billTotal));
+// var numberOrNot = prompt("Please input a number or term.")
+//
+// function isItNumber(input) {
+//     if (isNaN(numberOrNot)) {
+//         return "That is not a number."
+//     } else {
+//         return "Great job, that is a number!"
+//     }
+// }
+//
+// alert(isItNumber(numberOrNot))
 
-alert("Your total bill after your discount is $" + calculateTotal(luckyNumber, parseInt(billTotal));
