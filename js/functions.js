@@ -195,11 +195,6 @@ function reverseString(string) {
 console.log(reverseString("thursday"));
 
 
-// functon isNumeric() {
-//
-//     }
-
-
 function count(input) {
     return input.length;
 }
@@ -248,21 +243,21 @@ function square(a) {
 
 console.log(square(9));
 
-//
-// function sumOfSquares(a, b) {
-//     var  number = a;
-//     var  anotherNumber = b;
-//     return add(square(number), square(anotherNumber));
-// }
-//
-// console.log(sumOfSquares(4, 3));
-//
-//
-// function doMath(operator, a, b) {
-//     return operator(a, b);
-//     }
-//
-// console.log(doMath(add(2, 3));
+
+function sumOfSquares(a, b) {
+    var  squareOne = a * a;
+    var  squareTwo = b * b;
+    return add(squareOne), squareTwo;
+}
+
+console.log(sumOfSquares(4, 3));
+
+
+function doMath(operator, a, b) {
+    return operator(a, b);
+    }
+
+console.log(doMath(add(2, 3));
 
 
 
