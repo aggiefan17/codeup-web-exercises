@@ -1,8 +1,10 @@
 h1 {
     text-align: center;
-    line-height: 140px;
+    line-height: 100px;
+    position: relative;
+    margin-top: 200px;
 }
 
 img {
-    position: relative;
+    float: left;
 }
