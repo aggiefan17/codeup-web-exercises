@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+        #map-canvas {
+            width: 770px;
+            height: 481px;
+        }
+    </style>
+</head>
+<body>
+<!-- div to hold map -->
+<div id="map-canvas"></div>
+
+<!-- Load the Google Maps API [DON'T FORGET TO USE A KEY] -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9P9xpO3Wr4n188QCb3JUmF0pScb7hpJs"></script>
+
+<!-- Script to show address on map -->
+<script type="text/javascript">
+    (function() {
+        "use strict";
+
+
+
+        //         Set our map options
+        var mapOptions = {
+            // Set the zoom level
+            zoom: 15,
+
+            // This sets the center of the map at our location
+            center: {
+                lat:  29.6016,
+                lng: -98.5613
+            }
+        };
+
+
+        //         Render the map
+        var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+
+        // Create lat and long for our marker position
+        var freetails = { lat: 29.6016, lng: -98.5613 };
+
+        // Add the marker to our existing map
+        var marker = new google.maps.Marker({
+            position: freetails,
+            map: map
+
+        });
+
+            // Create a new infoWindow object with content
+            var infowindow = new google.maps.InfoWindow({
+                content: "Freetail Brewery"
+            });
+
+        // Open the window using our map and marker
+        infowindow.open(map, marker);
+
+
+    })();
+</script>
+</body>
