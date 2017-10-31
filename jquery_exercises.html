@@ -9,11 +9,11 @@
 </head>
 <body>
 
-<h1 id="main-header">Welcome to My Page!</h1>
+<h1 id="codeup">Welcome to My Page!</h1>
 
-<div class="container">
+<div class="codeup">
 
-    <h3 class="sub-header">What I've learned so far</h3>
+    <h3 class="codeup">What I've learned so far</h3>
 
     <ul class="unordered-list">
         <li id="first-list">HTML</li>
@@ -32,11 +32,13 @@
     $(document).ready(function() {
         "use strict";
 
-        var contents = $("#main-header").html();
-        alert(contents);
+//        var contents = $("#main-header").html();
+//        alert(contents);
+//
+//        var nextContents = $("#first-list").html();
+//        alert(nextContents);
 
-        var nextContents = $("#first-list").html();
-        alert(nextContents);
+        $(".codeup").css("border", "1px solid red")
 
     });
 
