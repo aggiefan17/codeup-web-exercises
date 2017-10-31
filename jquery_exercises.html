@@ -9,6 +9,22 @@
 </head>
 <body>
 
+<h1 id="main-header">Welcome to My Page!</h1>
+
+<div class="container">
+
+    <h3 class="sub-header">What I've learned so far</h3>
+
+    <ul class="unordered-list">
+        <li id="first-list">HTML</li>
+        <li id="second-list">CSS</li>
+        <li id="third-list">javaScript</li>
+    </ul>
+
+    <p class="main-paragraph">
+        We are currently working on jQuery.
+    </p>
+</div>
 <script type="text/javascript" src="js/jquery-2.2.4.js"></script>
 
 <script>
@@ -16,7 +32,11 @@
     $(document).ready(function() {
         "use strict";
 
-        alert("DOM has finished loading!");
+        var contents = $("#main-header").html();
+        alert(contents);
+
+        var nextContents = $("#first-list").html();
+        alert(nextContents);
 
     });
 
