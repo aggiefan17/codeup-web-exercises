@@ -16,9 +16,9 @@
     <h3 class="codeup">What I've learned so far</h3>
 
     <ul class="unordered-list">
-        <li id="first-list">HTML</li>
-        <li id="second-list">CSS</li>
-        <li id="third-list">javaScript</li>
+        <li class="list-item">HTML</li>
+        <li class="list-item">CSS</li>
+        <li class="list-item">javaScript</li>
     </ul>
 
     <p class="main-paragraph">
@@ -32,8 +32,22 @@
     $(document).ready(function() {
         "use strict";
 
-    $("li").css("font-size", "20px");
-    $("h1, p, li").css("background-color", "yellow");
+        $('h1').click(function() {
+            $(this).css("background-color", "yellow");
+        });
+
+        $('p').dblclick(function() {
+            $(this).css("font-size", "18px");
+        });
+
+        $('.list-item').hover(
+            function() {
+                $(this).css('color', 'red');
+            },
+            function() {
+                $(this).css('color', 'black');
+            }
+        );
 
     });
 
