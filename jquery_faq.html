@@ -12,6 +12,13 @@
 </head>
 <body>
 
+<div>
+    <h1>Would you like to sign up for our newsletter?</h1>
+    <span>x</span>
+</div>
+
+<h2>Please register for the site!</h2>
+
 <h1>National Park FAQ</h1>
 
 <dl>
@@ -120,6 +127,20 @@
                 e.preventDefault();
                 $("#state-parks-texas").children().first().css('color', 'blue');
             });
+
+            $("span").click(function () {
+                $("div").hide();
+            });
+
+            $("ul").hide();
+
+            $("h3").click(function () {
+                $(this).next().slideToggle();
+            });
+
+            $("h2").hide().delay(8000).fadeIn();
+
+
     });
 
 </script>
