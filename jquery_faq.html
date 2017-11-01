@@ -58,7 +58,26 @@
         about 6.7 million hours each year.</dd>
 </dl>
 
-<h3><a href="">Show/Hide Answers</a></h3>
+<h4><a href="" class="hide-answers">Show/Hide Answers</a></h4>
+
+<h3 id="national-parks-heading">National Parks</h3>
+<ul id="national-parks">
+    <li>Arches</li>
+    <li>Badlands</li>
+    <li>Carlsbad Caverns</li>
+    <li>Denali</li>
+    <li>Everglades</li>
+</ul>
+<h3>State Parks of Texas</h3>
+<ul id="state-parks-texas">
+    <li>Abilene</li>
+    <li>Big Bend</li>
+    <li>Choke Canyon</li>
+    <li>Davis Mountains</li>
+    <li>Enchanted Rock</li>
+</ul>
+
+<h4><a href="" class="highlight-list">Click to highlight list</a></h4>
 
 <script src="js/jquery-2.2.4.js"></script>
 
@@ -67,7 +86,7 @@
     $(document).ready(function() {
         "use strict";
 
-            $("a").click(function (e) {
+            $(".hide-answers").click(function (e) {
                 e.preventDefault();
                 $("dd").toggleClass("invisible");
             });
@@ -76,6 +95,31 @@
                $(e.target).css("background-color", "yellow");
             });
 
+            $(".highlight-list").click(function (e) {
+                e.preventDefault();
+                $("#national-parks").children().last().css("background-color", "yellow");
+                $("#state-parks-texas").children().last().css("background-color", "yellow");
+            });
+
+            $("#national-parks-heading").click(function (e) {
+                e.preventDefault();
+                $("#national-parks").children().css('font-weight', 'bold');
+            });
+
+            $("h3").last().click(function (e) {
+                e.preventDefault();
+                $("#state-parks-texas").children().css('font-weight', 'bold');
+            });
+
+            $("#national-parks").children().click(function (e) {
+                e.preventDefault();
+                $("#national-parks").children().first().css('color', 'blue');
+            });
+
+            $("#state-parks-texas").children().click(function (e) {
+                e.preventDefault();
+                $("#state-parks-texas").children().first().css('color', 'blue');
+            });
     });
 
 </script>
