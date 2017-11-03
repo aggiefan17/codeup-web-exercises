@@ -9,6 +9,8 @@
 </head>
 <body>
 
+<h1>My First Blog Page</h1>
+
 <div id="posts"></div>
 
 
@@ -20,11 +22,35 @@
 $(document).ready(function () {
     "use strict";
 
+    function updatePage() {
 
-    var blogRequest = $.ajax("data/blog.json");
-    console.log(blogRequest);
+        var blogRequest = $.ajax("data/blog.json");
 
-})
+        blogRequest.done(function (data) {
+            buildHTML(data);
+        });
+
+        blogRequest.fail(function (jqXhr, status) {
+            console.log(status + " request failed");
+        });
+    };
+
+    function buildHTML(blog) {
+        var blogHTML = "";
+
+        blog.forEach(function (post) {
+
+            blogHTML += "<h3>" + post.title + "</h3>";
+            blogHTML += "<p>" + post.content + "</p>";
+            blogHTML += "<p>" + post.categories + "</p>";
+            blogHTML += "<p>" + post.date + "</p>";
+
+        });
+        $("#posts").append(blogHTML);
+    };
+
+    updatePage();
+});
 
 </script>
 
