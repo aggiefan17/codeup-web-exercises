@@ -20,17 +20,15 @@
     (function() {
         "use strict";
 
-
-
         //         Set our map options
         var mapOptions = {
             // Set the zoom level
-            zoom: 15,
+            zoom: 10,
 
             // This sets the center of the map at our location
             center: {
-                lat:  29.6016,
-                lng: -98.5613
+                lat:  29.426791,
+                lng: -98.489602
             }
         };
 
@@ -44,17 +42,20 @@
         // Add the marker to our existing map
         var marker = new google.maps.Marker({
             position: freetails,
-            map: map
-
+            map: map,
+            animation: google.maps.Animation.DROP
         });
 
-            // Create a new infoWindow object with content
-            var infowindow = new google.maps.InfoWindow({
-                content: "Freetail Brewery"
-            });
+        // Create a new infoWindow object with content
+        var infowindow = new google.maps.InfoWindow({
+            content: "Freetail Brewery is my favorite because of the atmosphere, micro-brews and brick oven pizza"
+        });
 
         // Open the window using our map and marker
+        marker.addListener("click", function () {
         infowindow.open(map, marker);
+        });
+
 
 
     })();
